@@ -98,7 +98,7 @@ def get_detections():
         abort(404)
 
 # API that returns image with detections on it
-@app.route('/', methods= ['POST'])
+@app.route('/image', methods= ['POST'])
 def get_image():
     image = request.files["images"]
     image_name = image.filename
