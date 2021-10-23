@@ -35,6 +35,9 @@ print('classes loaded')
 
 # Initialize Flask application
 app = Flask(__name__)
+@app.route('/')
+def hello_world():
+  return ('<h1>Hello, World!</h1>')
 
 # API that returns JSON with classes found in images
 @app.route('/detections', methods=['POST'])
