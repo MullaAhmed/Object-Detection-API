@@ -1,9 +1,9 @@
 tensorflow
-numpy
+numpy==1.19.0
 lxml
 tqdm
 flask
 seaborn
 pillow
 gunicorn
-opencv-contrib-python-headless
+opencv-python
